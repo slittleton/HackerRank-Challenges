@@ -1,4 +1,3 @@
-
 /*
 Problem 7 - Min-Max Sum
 
