@@ -18,8 +18,8 @@ const url = `https://pokeapi.co/api/v2/pokemon/pikachu/`
 let x = fetch(url)
 let y;
 x
-  .then(res=>res.json())
-  .then(res => y = res)
+  .then(res=>res.json()) //resolves response into promise
+  .then(res => y = res) // gives variable y the values held in the returned promise
   .catch(err=>console.log(err))
 
  setTimeout(()=> console.log(y.species), 500) 
